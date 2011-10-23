@@ -79,6 +79,8 @@ vendor/__VENDOR__/__DEVICE__/proprietary/libril-qc-1.so:system/lib/libril-qc-1.s
 vendor/__VENDOR__/__DEVICE__/proprietary/libwms.so:system/lib/libwms.so \\
 vendor/__VENDOR__/__DEVICE__/proprietary/libwmsts.so:system/lib/libwmsts.so \\
 
+
+
 ## Camera proprietaries
 PRODUCT_COPY_FILES += \\
 vendor/__VENDOR__/__DEVICE__/proprietary/liboemcamera.so:system/lib/liboemcamera.so \\
@@ -138,10 +140,12 @@ vendor/__VENDOR__/__DEVICE__/proprietary/com.sony.android.playstationcertified.x
 
 PRODUCT_COPY_FILES += \\
 vendor/__VENDOR__/__DEVICE__/proprietary/xperiaplaycertified.jar:system/framework/xperiaplaycertified.jar \\
-vendor/__VENDOR__/__DEVICE__/proprietary/playstationcertified.jar:system/framework/playstationcertified.jar 
+vendor/__VENDOR__/__DEVICE__/proprietary/playstationcertified.jar:system/framework/playstationcertified.jar \\
+vendor/__VENDOR__/__DEVICE__/proprietary/com.sonyericsson.androidapp.storefront.apk:system/app/com.sonyericsson.androidapp.storefront.apk
 
 PRODUCT_COPY_FILES += \\
 vendor/__VENDOR__/__DEVICE__/proprietary/preinstalledservice.apk:system/app/preinstalledservice.apk
+vendor/__VENDOR__/__DEVICE__/proprietary/librsasigner.so:system/lib/librsasigner.so
 
 ## Adreno 200 files
 PRODUCT_COPY_FILES += \\

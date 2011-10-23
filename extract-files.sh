@@ -62,6 +62,7 @@ adb pull /system/lib/libwms.so ../../../vendor/$VENDOR/$DEVICE/proprietary
 adb pull /system/lib/libwmsts.so ../../../vendor/$VENDOR/$DEVICE/proprietary
 
 ## Camera proprietaries
+adb pull /system/etc/permissions/android.hardware.camera.front.xml ../../../vendor/$VENDOR/$DEVICE/proprietary
 adb pull /system/lib/liboemcamera.so ../../../vendor/$VENDOR/$DEVICE/proprietary
 adb pull /system/lib/libmmjpeg.so ../../../vendor/$VENDOR/$DEVICE/proprietary
 adb pull /system/lib/libmmipl.so ../../../vendor/$VENDOR/$DEVICE/proprietary 
@@ -103,19 +104,27 @@ adb pull /system/lib/libmiscta.so ../../../vendor/$VENDOR/$DEVICE/proprietary
 #Temporary GPS Fix untill we have 50001 gps
 adb pull /system/lib/hw/gps.msm7x30.so ../../../vendor/$VENDOR/$DEVICE/proprietary
 
-#permissions
-adb pull /system/etc/permissions/android.hardware.camera.front.xml ../../../vendor/$VENDOR/$DEVICE/proprietary
+#Temporary GPS Fix untill we have 50001 gps
+adb pull /system/lib/hw/gps.msm7x30.so ../../../vendor/$VENDOR/$DEVICE/proprietary
+
+## Adreno 200 files
+adb pull /system/lib/libgsl.so ../../../vendor/$VENDOR/$DEVICE/proprietary/libgsl.so
+adb pull /system/lib/egl/libGLESv1_CM_adreno200.so ../../../vendor/$VENDOR/$DEVICE/proprietary
+adb pull /system/lib/egl/libq3dtools_adreno200.so ../../../vendor/$VENDOR/$DEVICE/proprietary
+adb pull /system/lib/egl/libEGL_adreno200.so ../../../vendor/$VENDOR/$DEVICE/proprietary
+adb pull /system/lib/egl/libGLESv2_adreno200.so ../../../vendor/$VENDOR/$DEVICE/proprietary
+
+
+#PS Deps 
+adb pull /system/etc/permissions/com.playstation.playstationcertified.xml ../../../vendor/$VENDOR/$DEVICE/proprietary
 adb pull /system/etc/permissions/com.sonyericsson.android.xperiaplaycertified.xml ../../../vendor/$VENDOR/$DEVICE/proprietary
 adb pull /system/etc/permissions/com.sony.android.playstationcertified.xml ../../../vendor/$VENDOR/$DEVICE/proprietary
-
-
-#libs & Apps
+adb pull /system/framework/com.playstation.playstationcertified.jar ../../../vendor/$VENDOR/$DEVICE/proprietary
 adb pull /system/framework/playstationcertified.jar ../../../vendor/$VENDOR/$DEVICE/proprietary
 adb pull /system/framework/xperiaplaycertified.jar ../../../vendor/$VENDOR/$DEVICE/proprietary
-
-#ps dependencies
+adb pull /system/app/com.sonyericsson.androidapp.storefront.apk ../../../vendor/$VENDOR/$DEVICE/proprietary
 adb pull /system/app/preinstalledservice.apk ../../../vendor/$VENDOR/$DEVICE/proprietary
-
+adb pull /system/lib/librsasigner.so ../../../vendor/$VENDOR/$DEVICE/proprietary
 
 ./setup-makefiles.sh
 

@@ -23,8 +23,6 @@ endif
 PRODUCT_COPY_FILES += \
     $(LOCAL_KERNEL):kernel
 
-DISABLE_DEXPREOPT := false
-
 # These is the hardware-specific overlay, which points to the location
 # of hardware-specific resource overrides, typically the frameworks and
 # application settings that are stored in resourced.
@@ -94,5 +92,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.telephony.support_ipv4=true \
     ro.ril.vzw.feature = 1 \
     ro.ril.enable.managed.roaming = 1 \
+    ro.tethering.kb_disconnect=1 \
     ro.ril.wp.feature = 1 \
     BUILD_UTC_DATE=0
