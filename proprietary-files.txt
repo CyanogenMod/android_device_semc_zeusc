@@ -11,7 +11,7 @@ usr/keychars/qwerty.kcm.bin
 usr/keychars/zeus-keypad.kcm.bin
 bin/lidswitchd
 
-## RIL related stuff 
+## RIL related stuff
 bin/port-bridge
 bin/qmuxd
 lib/libauth.so
@@ -30,7 +30,6 @@ lib/libpbmlib.so
 lib/libqmi.so
 lib/libqueue.so
 lib/libuim.so
-lib/libreference-ril.so
 lib/libril.so
 lib/libril-qc-1.so
 lib/libwms.so
