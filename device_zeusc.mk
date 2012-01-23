@@ -7,9 +7,9 @@ $(call inherit-product-if-exists, vendor/semc/zeusc/zeusc-vendor.mk)
 
 
 # Discard inherited values and use our own instead.
-PRODUCT_NAME := Xperia Play
+PRODUCT_NAME := zeusc
 PRODUCT_DEVICE := zeusc
-PRODUCT_MODEL := R800x
+PRODUCT_MODEL := zeusc
 
 -include device/semc/zeus-common/zeus.mk
 
