@@ -17,11 +17,8 @@ LOCAL_PATH := device/semc/zeusc/
 #
 # Boot files
 #
-ifeq ($(TARGET_PREBUILT_KERNEL),)
 TARGET_PREBUILT_KERNEL := $(LOCAL_PATH)/kernel
-endif
-
-
-
+PRODUCT_COPY_FILES += \
+    $(TARGET_PREBUILT_KERNEL):kernel
 
 
