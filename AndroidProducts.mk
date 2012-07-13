@@ -26,4 +26,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/device_zeusc.mk
+    $(LOCAL_DIR)/full_zeusc.mk
